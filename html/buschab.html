@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
+    <title>Hotelia</title>
+</head>
+
+<body>
+    <div class="formbody">
+        <nav class="form-navvert">
+            <div class="form-navvert1">
+                <img class="imgLarge" src="../img/Hotelia horizontal blanco.svg">
+                <img class="imgResponsive" src="../img/hotelia campana.svg">
+                <img class="ProfilePictureResponsive" src="../img/Foto2Dashboard.png">
+                <h2>Angie Vargas</h2>
+                <p>angievargas2@gmail.com</p>
+            </div>
+            <div class="form-navvert2">
+                <div class="NavOption">
+                    <a href="./buschab.html">
+                    <i class="fa-solid fa-bed"></i>
+                    <h2>Buscar Habitaciones</h2>
+                    </a>
+                </div>
+                <div class="NavOption">
+                    <a href="./listhab.html">
+                    <i class="fa-solid fa-bell-concierge"></i>
+                    <h2>Listar Habitacion</h2>
+                    </a>
+                </div>
+                <div class="NavOption">
+                    <a href="./formhab.html">
+                    <i class="fa-solid fa-bed"></i>
+                    <h2>Form Habitaciones</h2>
+                    </a>
+                </div>
+                <div class="NavOption">
+                    <a href="./listhabnogrid.html">
+                    <i class="fa-solid fa-bell-concierge"></i>
+                    <h2> Listar Habitacion Grid</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="form-navvert3">
+                <div class="NavOption">
+                    <a href="../index.html">
+                        <i class="fa-solid fa-arrow-right-from-bracket"> </i>
+                        <h2 class="form-navd2"> Cerrar Sesión</h2>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="rightcontent">
+
+            <div class="ItemContainer">
+                <div class="habsearch">
+                    <h3>Busqueda de Habitaciones</h3>
+                    <Form class="SearchForm">
+                        <div class="GridContainer">
+                            <p class="FormItemTitle">Entrada:</p>
+                            <input type="date">
+                            <p class="FormItemTitle">Salida:</p>
+                            <input type="date">
+                            <p class="FormItemTitle">Adultos:</p>
+                            <select name="AdultSelect">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <p class="FormItemTitle">Niños:</p>
+                            <select name="ChildSelect">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <input class="SubmitButton" type="submit" value="Ver habitaciones disponibles">
+                    </Form>
+                </div>
+
+                <div class="HabList">
+                    <div class="HabItem">
+                        <div class="HabImg" style=" background-image: url(../img/Room1.jpg);">
+                            <p>Habitación doble</p>
+                        </div>
+                        <p class="HabPrice">
+                            128.000
+                        </p>
+                        <button class="BookingButton">
+                            Reservar
+                        </button>
+                    </div>
+                    <div class="HabItem">
+                        <div class="HabImg" style=" background-image: url(../img/Room2.jpg);">
+                            <p>Habitación doble</p>
+                        </div>
+                        <p class="HabPrice">
+                            128.000
+                        </p>
+                        <button class="BookingButton">
+                            Reservar
+                        </button>
+                    </div>
+                    <div class="HabItem">
+                        <div class="HabImg" style=" background-image: url(../img/Room3.jpg);">
+                            <p>Habitación doble</p>
+                        </div>
+                        <p class="HabPrice">
+                            128.000
+                        </p>
+                        <button class="BookingButton">
+                            Reservar
+                        </button>
+                    </div>
+                    <div class="HabItem">
+                        <div class="HabImg" style=" background-image: url(../img/Room4.jpg);">
+                            <p>Habitación doble</p>
+                        </div>
+                        <p class="HabPrice">
+                            128.000
+                        </p>
+                        <button class="BookingButton">
+                            Reservar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

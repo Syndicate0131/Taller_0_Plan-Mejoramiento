@@ -1,0 +1,897 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --azulclaro: #48d6ed;
+  --azuloscuro: #337ab7;
+  --azulnegro: #303342;
+  --negro: #333333;
+  --negro2: #000;
+  --gris: #b2b3b3;
+  --fondo: #fffefc;
+  --verdeazul: #157a8a;
+  --Magenta: #9c2759;
+  --blanco: #fff;
+  --degradado: linear-gradient(49.54deg, #337ab7 2.89%, #0b3860 80.34%);
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Marcellus", serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.rightcontent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**************************************************************************Formulario de Habitacion****************************************************************************/
+
+@media screen and (max-width: 1000px) {
+  /*Resolución tablet*/
+  @media screen and (min-width: 0px) {
+    a i {
+      color: white;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    body {
+      background: url(../img/FondoDashboard.jpg);
+      background-size: full;
+      background-repeat: no-repeat;
+    }
+    .formbody {
+      display: flex;
+      margin: auto auto;
+    }
+
+    .Content {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .Title {
+      padding: 7px 0 14px 0;
+      text-align: center;
+
+      font-size: auto;
+      width: 100%;
+      height: 5%;
+      background-color: #fff;
+    }
+    .Select {
+      padding: 1% 0;
+      width: 100%;
+      background-color: #f1f1f1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .Select select {
+      width: 50%;
+
+      margin-left: 10px;
+    }
+    .SelectItem {
+      display: flex;
+    }
+
+    .SubmitButtonContainer {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+    .ModifyButton {
+      width: 45%;
+      padding: 3% 0;
+      background-color: #000;
+      color: white;
+      border-radius: 2px;
+      margin-top: 5%;
+      border: none;
+    }
+    .InactiveButton {
+      width: 45%;
+      background-color: #9c2759;
+      color: white;
+      border-radius: 2px;
+      margin-top: 5%;
+      border: none;
+    }
+
+    .HabDescription {
+      text-align: center;
+      font-size: 0.7rem;
+    }
+
+    /* Lista de habitaciones sin grid */
+
+    .form-navvertv2 {
+      width: 20%;
+      font-size: 2rem;
+    }
+    .form-navvert {
+      background-color: var(--negro);
+      height: 100vh;
+      width: 17%;
+      display: flex;
+      flex-direction: column;
+    }
+    .form-navvert1 {
+      display: flex;
+      flex-direction: column;
+      background: url(../img/Group\ 200.svg);
+      background-size: cover;
+      font-size: 0.9rem;
+    }
+    .form-navvert1 img {
+      margin: 2rem;
+      width: 5rem;
+      height: 5rem;
+      align-self: center;
+    }
+    .imgLarge {
+      display: none;
+    }
+    .form-navvert1 h2 {
+      color: var(--blanco);
+      align-self: center;
+      display: none;
+    }
+    .form-navvert1 p {
+      color: var(--blanco);
+      align-self: center;
+      margin-bottom: 3rem;
+      display: none;
+    }
+
+    .NavOption {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2.5rem auto;
+    }
+    .NavOption i {
+      margin-right: 10px;
+      font-size: 2rem;
+    }
+    .NavOption i:visited {
+      color: #000;
+    }
+    .NavOption a h2 {
+      display: none;
+    }
+    .NavOption a {
+      display: flex;
+    }
+
+    .form-navvert2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 111.5rem;
+      background-color: var(--negro);
+      color: var(--blanco);
+    }
+    .form-navvert2 h2 {
+      display: none;
+    }
+
+    .form-navd1 {
+      margin-left: -5rem;
+    }
+
+    .form-navvert3 {
+      background-color: var(--negro);
+      display: flex;
+      justify-content: center;
+      
+      
+    }
+
+    .form-navvert3 h2 {
+      margin-left: 3rem;
+      margin-top: -20rem;
+    }
+
+    .form-navd2 {
+      margin-top: -4rem;
+      color: var(--blanco);
+      font-size: 2rem;
+    }
+
+    .form-formmain {
+      display: flex;
+    }
+
+    .form-formcont {
+      display: none;
+    }
+
+    .form-formcontv2 {
+      background-color: #e6e6e6e3;
+      margin: 2rem;
+      width: 90%;
+      height: 65rem;
+      border-radius: 10px;
+    }
+    .form-tittle h2 {
+      margin: auto;
+    }
+    .form-cont {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+
+    .form-cont1 {
+      margin-top: 1rem;
+
+      height: 100%;
+    }
+
+    .form-number {
+      display: flex;
+      margin-bottom: 2rem;
+      flex-direction: column;
+    }
+
+    .form-cont input {
+      border-radius: 3px;
+      border: 0px;
+      height: 2.2rem;
+      width: 90%;
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+      margin: 0.5rem;
+    }
+
+    .form-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .form-icon1 {
+      font-size: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .form-icon2 {
+      font-size: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .form-cont a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--negro);
+      font-size: 1.2rem;
+      width: 90%;
+      height: 3rem;
+      border: 0px;
+      border-radius: 5px;
+      color: var(--blanco);
+      margin: auto;
+    }
+
+    .form a {
+      text-decoration: none;
+    }
+    .HabList {
+      height: 50%;
+      /* width: 80%; */
+      display: grid;
+      grid-template-rows: auto auto;
+      grid-template-columns: auto;
+      justify-content: center;
+    }
+
+    .HabItem {
+      -webkit-box-shadow: 4px 4px 10px 1px rgba(130, 154, 171, 1);
+      -moz-box-shadow: 4px 4px 10px 1px rgba(130, 154, 171, 1);
+      box-shadow: 4px 4px 10px 1px rgba(130, 154, 171, 1);
+      margin-top: 10px;
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 3px;
+      padding: 10px;
+      background-color: white;
+      width: 10rem;
+      font-size: 0.8rem;
+    }
+    .HabImg {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 80px;
+      width: 100%;
+      background-size: 100% 100%;
+      margin-bottom: 10px;
+    }
+    .HabImg p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 20%;
+      width: 100%;
+      color: white;
+      background-color: #66b5d7da;
+    }
+    .HabImgNG {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 80px;
+      width: 100%;
+      background-size: 100% 100%;
+      margin-bottom: 10px;
+    }
+    .HabImgNG p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40%;
+      width: 100%;
+      color: rgb(255, 255, 255);
+      background-color: #66b5d7da;
+    }
+
+    .HabPrice {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .BookingButton {
+      background-color: #000;
+      transition: 1s;
+      color: white;
+      width: 100%;
+      padding: 5px 0;
+      border: none;
+      border-radius: 2px;
+    }
+
+    .BookingButton:hover {
+      background-color: #337ab7;
+      transition: 1s;
+      color: white;
+      width: 100%;
+      padding: 2px 0;
+    }
+    .ItemContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 1%;
+      
+      
+      background-color: rgb(221, 221, 221);
+      border-radius: 10px;
+    }
+    .HabsContainerNG {
+      display: flex;
+      height: 100%;
+      margin: auto auto;
+    }
+
+    .HabsContainer {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto auto;
+      height: 100%;
+      margin: auto auto;
+    }
+    h3 {
+      text-align: center;
+      border-radius: 5px;
+      color: white;
+      padding: 10px;
+      background-color: #4888bf;
+      margin-bottom: .2rem;
+    }
+    .SearchForm {
+      padding: 5%;
+      border-radius: 5px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      -webkit-box-shadow: 4px 4px 10px 1px rgba(130, 154, 171, 1);
+      -moz-box-shadow: 4px 4px 10px 1px rgba(130, 154, 171, 1);
+      box-shadow: 4px 4px 10px 1px rgba(130, 154, 171, 1);
+    }
+    .GridContainer {
+      display: grid;
+      grid-template-columns: auto auto;
+      height: 120px;
+    }
+    .GridContainer P {
+      height: 50%;
+      margin-bottom: .5rem;
+    }
+    .GridContainer input {
+      height: 50%;
+      margin-bottom: .5rem;
+    }
+    .GridContainer Select {
+      height: 50%;
+      margin-bottom: .5rem;
+    }
+    .SubmitButton {
+      background-color: #000;
+      color: white;
+      padding: 2px 5px;
+      border-radius: 2px;
+     
+    }
+  
+    
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  a i {
+    color: white;
+  }
+  .NavOption {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem auto;
+  }
+  .NavOption i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 2rem;
+  }
+  .NavOption i:visited {
+    color: #000;
+  }
+
+  .imgResponsive {
+    display: none;
+  }
+  .ProfilePictureResponsive {
+    display: none;
+  }
+
+  .formbody {
+    display: flex;
+    height: 100vh;
+  }
+
+  body {
+    background: url(../img/FondoDashboard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .form-navvert {
+    background-color: #333333;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .form-navvertv2 {
+    display: none;
+    margin-bottom: auto;
+  }
+  .form-navvert1 {
+    display: flex;
+    flex-direction: column;
+    height: 17rem;
+    background: url(../img/Group\ 200.svg);
+    font-size: 0.9rem;
+  }
+  .form-navvert1 img {
+    margin: 2rem;
+    width: 15rem;
+    height: 15rem;
+    align-self: center;
+  }
+  .form-navvert1 h2 {
+    color: var(--blanco);
+    align-self: center;
+  }
+  .form-navvert1 p {
+    color: var(--blanco);
+    align-self: center;
+    margin-bottom: 3rem;
+  }
+  .form-navvert2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 111.5rem;
+    background-color: var(--negro);
+    color: var(--blanco);
+  }
+
+  .form-navd1 {
+    margin-left: -5rem;
+  }
+
+  .form-navvert3 {
+    background-color: var(--negro);
+  }
+
+  .form-navd2 {
+    color: var(--blanco);
+    font-size: 2rem;
+  }
+
+  .form-formmain {
+    background: url(../img/FondoDashboard.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .form-formcontv2 {
+    display: none;
+  }
+
+  .form-formcont {
+    background-color: #e6e6e6e3;
+    margin: 2rem;
+    width: 100%;
+    height: 55rem;
+    border-radius: 10px;
+  }
+  .form-tittle h2 {
+    font-size: 2.4rem;
+    margin-left: 32rem;
+  }
+  .form-cont {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+  .form-contv2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+
+  .form-cont1 {
+    margin-top: 1rem;
+    width: 46rem;
+    height: 22rem;
+  }
+  .form-cont2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 35rem;
+    height: 22rem;
+  }
+  .form-cont3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 85rem;
+    height: 21rem;
+  }
+
+  .form-number {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  .form-cont input {
+    border-radius: 3px;
+    border: 0px;
+    height: 2.2rem;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+  .form-cont3 input {
+    border-radius: 3px;
+    border: 0px;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+  .form-long {
+    height: 10rem;
+  }
+  .form-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .form-icon {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-formcont a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--negro);
+    font-size: 1.2rem;
+    width: 18rem;
+    height: 3rem;
+    border: 0px;
+    border-radius: 5px;
+    color: var(--blanco);
+    margin: auto;
+  }
+
+  .form a {
+    text-decoration: none;
+  }
+
+  /* Busqueda de Habitaciones */
+
+  
+  h3 {
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    background-color: #4888bf;
+    margin-bottom: 15px;
+  }
+  .habsearch {
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .SearchForm {
+    /* height: 50%; */
+    
+    padding: 30px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    -webkit-box-shadow: 4px 4px 10px 1px rgba(130, 154, 171, 1);
+    -moz-box-shadow: 4px 4px 10px 1px rgba(130, 154, 171, 1);
+    box-shadow: 4px 4px 10px 1px rgba(130, 154, 171, 1);
+  }
+  
+  .GridContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .GridContainer P {
+    height: 50%;
+    margin-bottom: 20px;
+  }
+  .GridContainer input {
+    height: 50%;
+    margin-bottom: 20px;
+  }
+  .GridContainer Select {
+    height: 50%;
+    margin-bottom: 20px;
+  }
+  .SubmitButton {
+    background-color: #000;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 2px;
+    margin-top: 5%;
+  }
+
+  /* Lista de Habitaciones en junto a la buqueda*/
+
+  .HabList {
+    height: 50%;
+    /* width: 80%; */
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+
+
+  .HabItem {
+    -webkit-box-shadow: 4px 4px 10px 1px rgba(130, 154, 171, 1);
+    -moz-box-shadow: 4px 4px 10px 1px rgba(130, 154, 171, 1);
+    box-shadow: 4px 4px 10px 1px rgba(130, 154, 171, 1);
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: white;
+    width: 13rem;
+  }
+  .HabImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100px;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+  .HabImg p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+    color: white;
+    background-color: #66b5d7da;
+  }
+
+  .HabPrice {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .BookingButton {
+    background-color: #000;
+    transition: 1s;
+    color: white;
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    border-radius: 2px;
+  }
+
+  .BookingButton:hover {
+    background-color: #337ab7;
+    transition: 1s;
+    color: white;
+    width: 100%;
+    padding: 2px 0;
+  }
+  .ItemContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+  }
+
+  .NavOption a {
+    display: flex;
+  }
+
+  /* Lista de habitaciones page */
+
+  .Content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Title {
+    padding: 1% 0;
+    text-align: center;
+    font-size: auto;
+    width: 100%;
+    height: 5%;
+    background-color: #fff;
+  }
+  .Select {
+    padding: 1% 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+  }
+  .Select select {
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+
+  .HabsContainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    margin: auto auto;
+  }
+
+  .SubmitButtonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .ModifyButton {
+    width: 45%;
+    padding: 3% 0;
+    background-color: #000;
+    color: white;
+    border-radius: 2px;
+    margin-top: 5%;
+    border: none;
+  }
+  .InactiveButton {
+    width: 45%;
+    background-color: #9c2759;
+    color: white;
+    border-radius: 2px;
+    margin-top: 5%;
+    border: none;
+  }
+  .HabDescription {
+    text-align: center;
+  }
+
+  /* Lista de habitaciones sin grid */
+
+  .HabsContainerNG {
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+  }
+
+  .HabsRow {
+    display: flex;
+   
+  }
+  .HabImgNG {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 80px;
+    width: 100%;
+    background-size: 100% 100%;
+    margin-bottom: 10px;
+  }
+  .HabImgNG p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: #66b5d7da;
+  }
+  a {
+  text-decoration: none;
+  color: white;
+  }
+}
